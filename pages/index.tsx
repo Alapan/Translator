@@ -14,7 +14,6 @@ export default function Home() {
     event.preventDefault();
     const formValues = Object.fromEntries(new FormData(event.currentTarget));
     const { inputText } = formValues;
-    console.log('INPUT TEXT: ', inputText)
     const headers = {
       'Content-Type': 'application/json'
     };
