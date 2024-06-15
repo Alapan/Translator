@@ -13,8 +13,16 @@ export const resolvers = {
         const [translatedString] = await translate.translate(sourceStr, destinationLangCode);
         return translatedString;
       } catch (err) {
-        console.error('ERROR: ', err); 
+        throw err;
+      }
+    },
+    getLanguageCodes: async () => {
+      try {
+        const [languages] = await translate.getLanguages();
+        return languages;
+      } catch (err) {
+        throw err;
       }
     }
   }
-}
+};
