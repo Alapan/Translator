@@ -1,12 +1,6 @@
-import { ChangeEvent, FormEvent, useState } from 'react';
+import { ChangeEvent, useState } from 'react';
 
-interface InputTextProps {
-  onSubmit: (event: FormEvent<HTMLFormElement>) => void;
-}
-
-const InputText = ({
-  onSubmit
-}: InputTextProps) => {
+const InputText = () => {
 
   const [input, setInput] = useState('');
 
@@ -15,21 +9,14 @@ const InputText = ({
   }
 
   return (
-    <form
-      id='input-form'
-      aria-label='input form'
-      onSubmit={onSubmit}
-    >
-      <input
-        type='text'
-        aria-label='text'
-        placeholder='Type text here'
-        name='inputText'
-        value={input}
-        onChange={onChange}
-      />
-      <button type='submit'>Translate</button>
-    </form>
+    <input
+      type='text'
+      aria-label='text'
+      placeholder='Type text here'
+      name='inputText'
+      value={input}
+      onChange={onChange}
+    />
   );
 }
 
