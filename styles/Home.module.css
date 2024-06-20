@@ -14,7 +14,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 20px;
-  margin-bottom: 5rem;
+  margin-block-end: 5rem;
 }
 
 .textContainer {
@@ -22,7 +22,7 @@
 }
 
 .btnContainer {
-  margin-top: 2rem;
+  margin-block-start: 2rem;
 }
 
 @media (max-width: 720px) {
@@ -33,11 +33,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 20px;
-    margin: 2rem 4rem;
+    margin-block: 2rem;
+    margin-inline: 4rem;
   }
 
   .textContainer {
     font-size: 1.5rem;
-    margin-top: 2rem;
+    margin-block-start: 2rem;
   }
 }
