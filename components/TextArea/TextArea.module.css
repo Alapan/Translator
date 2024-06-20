@@ -5,8 +5,8 @@
   border-radius: 4px;
   width: 40vw;
   height: 20vh;
-  padding-block-start: 4px;
-  padding-inline-start: 8px;
+  padding-block-start: var(--padding-small);
+  padding-inline-start: var(--padding-medium);
 }
 
 @media (max-width: 720px) {

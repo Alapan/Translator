@@ -1,7 +1,7 @@
 .dropdownContainer {
   appearance: none;
   position: relative;
-  margin-block-start: 2rem;
+  margin-block-start: var(--margin-small);
 }
 
 .dropdown {
@@ -9,7 +9,7 @@
   width: 200px;
   height: 50px;
   font-size: 16px;
-  padding-block-start: 2px;
-  padding-block-end: 2px;
-  padding-inline-start: 8px;
+  padding-block-start: var(--padding-xs);
+  padding-block-end: var(--padding-xs);
+  padding-inline-start: var(--padding-medium);
 }

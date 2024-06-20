@@ -22,7 +22,7 @@
 }
 
 .btnContainer {
-  margin-block-start: 2rem;
+  margin-block-start: var(--margin-small);
 }
 
 @media (max-width: 720px) {
@@ -33,12 +33,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 20px;
-    margin-block: 2rem;
-    margin-inline: 4rem;
+    margin-block: var(--margin-medium);
+    margin-inline: var(--margin-medium);
   }
 
   .textContainer {
     font-size: 1.5rem;
-    margin-block-start: 2rem;
+    margin-block-start: var(--margin-small);
   }
 }
