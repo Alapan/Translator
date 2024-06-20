@@ -4,10 +4,10 @@ import { FormEvent, FormEventHandler, useState } from 'react';
 
 import { LanguageCode } from '../types';
 import client from '../utils/graphQLClient';
-import InputText from '../components/InputText/InputText';
 import Dropdown from '../components/Dropdown/Dropdown';
 import Form from '../components/Form/Form';
 import TextArea from '../components/TextArea/TextArea';
+import styles from '../styles/Translate.module.css';
 
 const Page = ({
   languageCodes
@@ -36,16 +36,28 @@ const Page = ({
   }
 
   return (
-    <div>
+    <div className={styles.translateFormContainer}>
       <Form onSubmit={onSubmit} buttonText={'Translate'}>
-        <InputText />
         <Dropdown
           options={languageCodes}
-          dropdownName={'languageDropdown'}
-          label={'Select language'}
+          dropdownName='languageDropdown'
+          label='Select language'
         />
+        <div className={styles.inputOutputContainer}>
+          <TextArea
+            className={styles.inputTextArea}
+            placeholder='Type input text here'
+            isDisabled={false}
+            formFieldName='inputText'
+          />
+          <TextArea
+            className={styles.outputTextArea}
+            placeholder='Translated text'
+            isDisabled={true}
+            displayText={translatedText}
+          />
+        </div>
       </Form>
-      <TextArea text={translatedText} />
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import styles from './Dropdown.module.css';
 interface Option {
   name: string;
   code: string;
@@ -11,14 +12,14 @@ interface DropdownProps {
 
 const Dropdown = ({ options, dropdownName, label }: DropdownProps) => {
   return (
-    <>
+    <div className={styles.dropdownContainer}>
       <label htmlFor={dropdownName}>{label}</label>
-      <select name={dropdownName}>
+      <select name={dropdownName} className={styles.dropdown}>
         {options.map(({name, code}) => (
-          <option value={code}>{name}</option>
+          <option value={code} key={code}>{name}</option>
         ))}
       </select>
-    </>
+    </div>
   );
 }
 

@@ -1,0 +1,33 @@
+.translateFormContainer {
+  margin-inline: 4rem;
+}
+
+.inputOutputContainer {
+  display: flex;
+  flex-direction: row;
+  margin-block-start: 2rem;
+  margin-block-end: 2rem;
+}
+
+.inputTextArea {
+  flex: 1;
+}
+
+.outputTextArea {
+  flex: 1;
+}
+
+@media (max-width: 720px) {
+  .translateFormContainer {
+    margin-inline: 2rem;
+  }
+
+  .inputOutputContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inputTextArea, .outputTextArea {
+    margin-block-start: 4px;
+  }
+}

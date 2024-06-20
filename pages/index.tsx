@@ -12,7 +12,7 @@ export default function Page() {
       <div className={styles.imgContainer} />
       <div className={styles.textContainer}>{'Translate text to over 30 languages'}</div>
       <div className={styles.btnContainer}>
-        <LinkButton buttonText='Translate' link='/translate' />
+        <LinkButton buttonText='Go to Translation page' link='/translate' />
       </div>
     </div>
   );

@@ -1,0 +1,11 @@
+.submitBtn {
+  background-color: green;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border-color: rgb(62, 130, 62);
+  font-size: 15px;
+  width: 10rem;
+  height: 4rem;
+  cursor: pointer;
+}

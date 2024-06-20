@@ -1,0 +1,16 @@
+.textareaCls {
+  resize: none;
+  overflow-y: scroll;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 40vw;
+  height: 20vh;
+  padding-block-start: 4px;
+  padding-inline-start: 8px;
+}
+
+@media (max-width: 720px) {
+  .textareaCls {
+    width: 90vw;
+  }
+}
