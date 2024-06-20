@@ -1,12 +1,12 @@
 .translateFormContainer {
-  margin-inline: 4rem;
+  margin-inline: var(--margin-medium);
 }
 
 .inputOutputContainer {
   display: flex;
   flex-direction: row;
-  margin-block-start: 2rem;
-  margin-block-end: 2rem;
+  margin-block-start: var(--margin-small);
+  margin-block-end: var(--margin-small);
 }
 
 .inputTextArea {
@@ -19,7 +19,7 @@
 
 @media (max-width: 720px) {
   .translateFormContainer {
-    margin-inline: 2rem;
+    margin-inline: var(--margin-small);
   }
 
   .inputOutputContainer {
@@ -28,6 +28,6 @@
   }
 
   .inputTextArea, .outputTextArea {
-    margin-block-start: 4px;
+    margin-block-start: var(--margin-medium);
   }
 }
